@@ -1,6 +1,11 @@
+import {Helmet} from 'react-helmet-async';
+
 function PlayerScreen(): JSX.Element {
   return (
     <div className="player">
+      <Helmet>
+        <title>Плеер</title>
+      </Helmet>
       <video
         src="#"
         className="player__video"

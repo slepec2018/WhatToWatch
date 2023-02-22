@@ -1,8 +1,14 @@
+import {Helmet} from 'react-helmet-async';
+import Logo from '../../components/logo/logo';
+
 function AddReview(): JSX.Element {
   return (
     <section className="film-card film-card--full">
+      <Helmet>
+        <title>Добавить отзыв</title>
+      </Helmet>
       <div className="film-card__header">
-         <div className="film-card__bg">
+        <div className="film-card__bg">
           <img
             src="img/bg-the-grand-budapest-hotel.jpg"
             alt="The Grand Budapest Hotel"
@@ -13,14 +19,7 @@ function AddReview(): JSX.Element {
 
         <header className="page-header">
           <div className="logo">
-            <a
-              href="main.html"
-              className="logo__link"
-            >
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
+            <Logo />
           </div>
 
           <nav className="breadcrumbs">
@@ -222,7 +221,8 @@ function AddReview(): JSX.Element {
               name="review-text"
               id="review-text"
               placeholder="Review text"
-            ></textarea>
+            >
+            </textarea>
             <div className="add-review__submit">
               <button
                 className="add-review__btn"

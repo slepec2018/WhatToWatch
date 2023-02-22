@@ -1,6 +1,12 @@
+import {Helmet} from 'react-helmet-async';
+import Logo from '../logo/logo';
+
 function CardFilmCard(): JSX.Element {
   return (
     <section className="film-card film-card--full">
+      <Helmet>
+        <title>Карточка товара</title>
+      </Helmet>
       <div className="film-card__hero">
         <div className="film-card__bg">
           <img
@@ -13,11 +19,7 @@ function CardFilmCard(): JSX.Element {
 
         <header className="page-header film-card__head">
           <div className="logo">
-            <a href="main.html" className="logo__link">
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
+            <Logo />
           </div>
 
           <ul className="user-block">
@@ -133,9 +135,9 @@ function CardFilmCard(): JSX.Element {
             </div>
 
             <div className="film-card__text">
-              <p>In the 1930s, the Grand Budapest Hotel is a popular European ski resort, presided over by concierge Gustave H. (Ralph Fiennes). Zero, a junior lobby boy, becomes Gustave's friend and protege.</p>
+              <p>In the 1930s, the Grand Budapest Hotel is a popular European ski resort, presided over by concierge Gustave H. (Ralph Fiennes). Zero, a junior lobby boy, becomes Gustave`&apos;`s friend and protege.</p>
 
-              <p>Gustave prides himself on providing first-className service to the hotel's guests, including satisfying the sexual needs of the many elderly women who stay there. When one of Gustave's lovers dies mysteriously, Gustave finds himself the recipient of a priceless painting and the chief suspect in her murder.</p>
+              <p>Gustave prides himself on providing first-className service to the hotel`&apos;`s guests, including satisfying the sexual needs of the many elderly women who stay there. When one of Gustave`&apos;`s lovers dies mysteriously, Gustave finds himself the recipient of a priceless painting and the chief suspect in her murder.</p>
 
               <p className="film-card__director"><strong>Director: Wes Anderson</strong></p>
 

@@ -1,6 +1,11 @@
+import {Helmet} from 'react-helmet-async';
+
 function MainFilmCard(): JSX.Element {
   return (
     <section className="film-card">
+      <Helmet>
+        <title>Главная</title>
+      </Helmet>
       <div className="film-card__bg">
         <img
           src="img/bg-the-grand-budapest-hotel.jpg"
